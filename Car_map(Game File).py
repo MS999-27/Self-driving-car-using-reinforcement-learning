@@ -166,7 +166,7 @@ class Game(Widget):
         # If the car is on the sand it is slowed down and reward = -1
         if sand[int(self.car.x), int(self.car.y)] > 0:
             self.car.velocity = Vector(1, 0).rotate(self.car.angle)
-            last_reward = -1
+            last_reward = -5
         else: # otherwise
             self.car.velocity = Vector(6, 0).rotate(self.car.angle)
             last_reward = -0.2
