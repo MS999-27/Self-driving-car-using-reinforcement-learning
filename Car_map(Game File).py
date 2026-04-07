@@ -207,7 +207,7 @@ class MyPaintWidget(Widget):
         with self.canvas:
             Color(0.8,0.7,0)
             d = 10.
-            touch.ud['line'] = Line(points = (touch.x, touch.y), width = 10)
+            touch.ud['line'] = Line(points = (touch.x, touch.y), width = 20)
             last_x = int(touch.x)
             last_y = int(touch.y)
             n_points = 0
